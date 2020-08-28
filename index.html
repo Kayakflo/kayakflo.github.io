@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table id="pointsAll">
+        <caption>Werte der Figuren</caption>
+        <thead>
+            <tr>
+                <th>Kombination</th>
+                <th>Punkte einzel (offen)</th>
+                <th>Anzahl (offen)</th>
+                <th>Punkte einzel (verdeckt)</th>
+                <th>Anzahl (verdeckt)</th>
+                <th>Punkte faktorisiert</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Paar (Drachen)</td>
+                <td>2</td>
+                <td><input type="number" value="0" step="1"></td>
+                <td>2</td>
+                <td><input type="number" value="0" step="1"></td>
+                <td><p>0</p></td>
+            </tr>
+
+            <tr>
+                <td>Paar (Wind eigener / Ostwind)</td>
+                <td>2</td>
+                <td><input type="number" value="0" step="1"></td>
+                <td>2</td>
+                <td><input type="number" value="0" step="1"></td>
+                <td><p>0</p></td>
+            </tr>
+
+            <tr>
+                <td>Chii</td>
+                <td>0</td>
+                <td><input type="number" value="0" step="1"></td>
+                <td>0</td>
+                <td><input type="number" value="0" step="1"></td>
+                <td><p>0</p></td>
+            </tr>
+
+            <tr>
+                <td>Pong (2-8)</td>
+                <td>2</td>
+                <td><input type="number" value="0" step="1"></td>
+                <td>4</td>
+                <td><input type="number" value="0" step="1"></td>
+                <td><p>0</p></td>
+            </tr>
+
+            <tr>
+                <td>Pong (1 / 9 / Drachen / Winde)</td>
+                <td>4</td>
+                <td><input type="number" value="0" step="1"></td>
+                <td>8</td>
+                <td><input type="number" value="0" step="1"></td>
+                <td><p>0</p></td>
+            </tr>
+
+            <tr>
+                <td>Kan (2-8)</td>
+                <td>8</td>
+                <td><input type="number" value="0" step="1"></td>
+                <td>16</td>
+                <td><input type="number" value="0" step="1"></td>
+                <td><p>0</p></td>
+            </tr>
+
+            <tr>
+                <td>Kan (1 / 9 / Drachen / Winde)</td>
+                <td>16</td>
+                <td><input type="number" value="0" step="1"></td>
+                <td>32</td>
+                <td><input type="number" value="0" step="1"></td>
+                <td><p>0</p></td>
+            </tr>
+
+            <tr>
+                <td>Blume (eigene)</td>
+                <td>8</td>
+                <td><input type="number" value="0" step="1"></td>
+                <td><span></span></td>
+                <td><span></span></td>
+                <td><p>0</p></td>
+            </tr>
+
+            <tr>
+                <td>Blume (fremd)</td>
+                <td>4</td>
+                <td><input type="number" value="0" step="1"></td>
+                <td><span></span></td>
+                <td><span></span></td>
+                <td><p>0</p></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table id="factorAll">
+        <caption>Verdopplungen (Alle Spieler)</caption>
+        <thead>
+            <tr>
+                <th>Beschreibung</th>
+                <th>Verdopplungen</th>
+                <th>Erfüllt</th>
+                <th><span></span></th>
+                <th><span></span></th>
+                <th>Verdopplungen</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Alles einfache Steine (Nicht: 1 / 9 / Drachen / Wind)</td>
+                <td>1</td>
+                <td><input type="checkbox"></td>
+                <td><span></span></td>
+                <td><span></span></td>
+                <td><p>0</p></td>
+            </tr>
+
+            <tr>
+                <td>Trumpf oder Eckstein in jeder Figur (1 / 9 / Drachen / Wind)</td>
+                <td>1</td>
+                <td><input type="checkbox"></td>
+                <td><span></span></td>
+                <td><span></span></td>
+                <td><p>0</p></td>
+            </tr>
+
+            <tr>
+                <td>Nur Trumpf und Ecksteine (1 / 9 / Drachen / Wind)</td>
+                <td>3</td>
+                <td><input type="checkbox"></td>
+                <td><span></span></td>
+                <td><span></span></td>
+                <td><p>0</p></td>
+            </tr>
+
+            <tr>
+                <td>Drei Chiis gleicher Nummern</td>
+                <td>1</td>
+                <td><input type="checkbox"></td>
+                <td><span></span></td>
+                <td><span></span></td>
+                <td><p>0</p></td>
+            </tr>
+
+            <tr>
+                <td>Drei aufeinanderfolgende Chiis gleicher Farbe</td>
+                <td>3</td>
+                <td><input type="checkbox"></td>
+                <td><span></span></td>
+                <td><span></span></td>
+                <td><p>0</p></td>
+            </tr>
+
+            <tr>
+                <td>Pong oder Kan (eigner Wind)</td>
+                <td>1</td>
+                <td><input type="checkbox"></td>
+                <td><span></span></td>
+                <td><span></span></td>
+                <td><p>0</p></td>
+            </tr>
+
+            <tr>
+                <td>Pong oder Kan (Rundenwind)</td>
+                <td>1</td>
+                <td><input type="checkbox"></td>
+                <td><span></span></td>
+                <td><span></span></td>
+                <td><p>0</p></td>
+            </tr>
+
+            <tr>
+                <td>Drachenpong</td>
+                <td>1</td>
+                <td><input type="radio" name="dragonkan"></td>
+                <td><span></span></td>
+                <td><span></span></td>
+                <td><p>0</p></td>
+            </tr>
+
+            <tr>
+                <td>Drachenkan</td>
+                <td>2</td>
+                <td><input type="radio" name="dragonkan"></td>
+                <td><span></span></td>
+                <td><span></span></td>
+                <td><p>0</p></td>
+            </tr>
+
+            <tr>
+                <td>Farbenspiel (Unrein) (Nur 1-9 beliebiger Farben)</td>
+                <td>1</td>
+                <td><input type="radio" name="colortype"></td>
+                <td><span></span></td>
+                <td><span></span></td>
+                <td><p>0</p></td>
+            </tr>
+
+            <tr>
+                <td>Farbenspiel (Rein) (Nur 1-9 derselben Farbe)</td>
+                <td>3</td>
+                <td><input type="radio" name="colortype"></td>
+                <td><span></span></td>
+                <td><span></span></td>
+                <td><p>0</p></td>
+            </tr>
+
+            <tr>
+                <td>Jede eigene Blume oder Jahreszeit</td>
+                <td>1</td>
+                <td><input type="radio" name="flowertype"></td>
+                <td><span></span></td>
+                <td><span></span></td>
+                <td><p>0</p></td>
+            </tr>
+
+            <tr>
+                <td>Jede Blume oder Jahreszeit</td>
+                <td>2</td>
+                <td><input type="radio" name="flowertype"></td>
+                <td><span></span></td>
+                <td><span></span></td>
+                <td><p>0</p></td>
+            </tr>
+
+            <tr>
+                <td>Jede Blume und Jahreszeit</td>
+                <td>4</td>
+                <td><input type="radio" name="flowertype"></td>
+                <td><span></span></td>
+                <td><span></span></td>
+                <td><p>0</p></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table id="pointsWinner">
+        <caption>Punkte für den Gewinner</caption>
+        <thead>
+            <tr>
+                <th>Beschreibung</th>
+                <th>Punkte</th>
+                <th>Erfüllt</th>
+                <th><span></span></th>
+                <th><span></span></th>
+                <th>Punkte faktorisiert</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Gewonnen...</td>
+                <td>20</td>
+                <td><input type="checkbox"></td>
+                <td><span></span></td>
+                <td><span></span></td>
+                <td><p>0</p></td>
+            </tr>
+
+            <tr>
+                <td>... nur Pongs / Kans</td>
+                <td>10</td>
+                <td><input type="radio" name="wintype"></td>
+                <td><span></span></td>
+                <td><span></span></td>
+                <td><p>0</p></td>
+            </tr>
+
+            <tr>
+                <td>... nur Chiis</td>
+                <td>10</td>
+                <td><input type="radio" name="wintype"></td>
+                <td><span></span></td>
+                <td><span></span></td>
+                <td><p>0</p></td>
+            </tr>
+
+            <tr>
+                <td>... mit einzig möglichem Stein</td>
+                <td>2</td>
+                <td><input type="checkbox"></td>
+                <td><span></span></td>
+                <td><span></span></td>
+                <td><p>0</p></td>
+            </tr>
+
+            
+            <tr>
+                <td>... mit Schlussstein von Mauer</td>
+                <td>2</td>
+                <td><input type="checkbox"></td>
+                <td><span></span></td>
+                <td><span></span></td>
+                <td><p>0</p></td>
+            </tr>
+
+            
+            <tr>
+                <td>... mit Schlussstein von toter Mauer</td>
+                <td>10</td>
+                <td><input type="checkbox"></td>
+                <td><span></span></td>
+                <td><span></span></td>
+                <td><p>0</p></td>
+            </tr>
+
+            
+            <tr>
+                <td>... mit Kan-Raub</td>
+                <td>10</td>
+                <td><input type="checkbox"></td>
+                <td><span></span></td>
+                <td><span></span></td>
+                <td><p>0</p></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table id="factorWinner">
+        <caption>Verdopplungen (Gewinner)</caption>
+        <thead>
+            <tr>
+                <th>Beschreibung</th>
+                <th>Verdopplungen</th>
+                <th>Erfüllt</th>
+                <th><span></span></th>
+                <th><span></span></th>
+                <th>Verdopplungen</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Mit letzten Stein gewonnen</td>
+                <td>1</td>
+                <td><input type="checkbox"></td>
+                <td><span></span></td>
+                <td><span></span></td>
+                <td><p>0</p></td>
+            </tr>
+
+            <tr>
+                <td>Alle Steine  in der Hand</td>
+                <td>1</td>
+                <td><input type="checkbox"></td>
+                <td><span></span></td>
+                <td><span></span></td>
+                <td><p>0</p></td>
+            </tr>
+
+            <tr>
+                <td>Null-Punkte-Hand</td>
+                <td>1</td>
+                <td><input type="checkbox"></td>
+                <td><span></span></td>
+                <td><span></span></td>
+                <td><p>0</p></td>
+            </tr>
+
+            <tr>
+                <td>Nach Riichi gewonnen</td>
+                <td>1</td>
+                <td><input type="checkbox"></td>
+                <td><span></span></td>
+                <td><span></span></td>
+                <td><p>0</p></td>
+            </tr>
+
+            <tr>
+                <td>Riichi nach erstem abgeworfenem Stein</td>
+                <td>2</td>
+                <td><input type="checkbox"></td>
+                <td><span></span></td>
+                <td><span></span></td>
+                <td><p>0</p></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="footer-bar">
+        <span id="points">Punkte: 0</span>
+        <span id="factors">Faktor: 0</span>
+        <span id="sum">Gesamt: 0</span>
+    </div>
+    
+<footer>
+    <script src="index.js"></script>
+    <script src="pointsAllChange.js"></script>
+    <script src="pointsWinnerChange.js"></script>
+    <script src="factorsAllChange.js"></script>
+    <script src="factorsWinnerChange.js"></script>
+    <link rel="stylesheet" href="index.css">
+</footer>
+</html>
