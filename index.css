@@ -1,8 +1,18 @@
 @media (min-width: 1024px) {
     body {
-        margin: 0 25vw;
+        margin: 0 20%;
     }
     
+}
+
+@media (max-width: 1024px) {
+    body {
+        margin: 0;
+    }
+
+    tr {
+        border-bottom: 1px solid black;
+    }
 }
 
 th,
@@ -12,6 +22,8 @@ td {
 
 table {
     width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 60px;
 }
 
 table caption {
